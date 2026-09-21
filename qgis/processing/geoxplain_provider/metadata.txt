@@ -1,0 +1,17 @@
+[general]
+name=GeoExplain
+qgisMinimumVersion=3.22
+description=Explainable machine learning for geospatial prediction (SHAP, spatial SHAP, spatial validation)
+version=0.1.0
+author=Md Khadem Ali
+email=khademgenu22@gmail.com
+about=Processing provider that wraps the GeoExplain Python package. Requires the geoxplain package to be installed in the Python environment used by QGIS. Experimental; not published to the QGIS plugin repository.
+tracker=https://github.com/mdkhademali/GeoExplain/issues
+repository=https://github.com/mdkhademali/GeoExplain
+tags=machine learning, shap, explainability, geoai, raster
+homepage=https://github.com/mdkhademali/GeoExplain
+category=Analysis
+icon=icon.png
+experimental=True
+deprecated=False
+hasProcessingProvider=yes

@@ -1,0 +1,8 @@
+feature,importance,kind
+distance_to_water,0.24530708679204372,impurity decrease
+ndbi,0.1397284381067617,impurity decrease
+ndvi,0.13923024281004834,impurity decrease
+elevation,0.13135056001191917,impurity decrease
+rainfall,0.12442146680872619,impurity decrease
+lst,0.11308585561329583,impurity decrease
+population,0.10687634985720516,impurity decrease

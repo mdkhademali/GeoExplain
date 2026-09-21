@@ -1,0 +1,63 @@
+"""Figures and maps: academic style, cartographic maps, statistical plots and diagrams."""
+
+from .diagrams import draw_architecture, draw_logo, draw_workflow
+from .maps import (
+    SOURCE_SYNTHETIC,
+    add_north_arrow,
+    add_scale_bar,
+    plot_dominant_driver,
+    plot_feature_and_shap,
+    plot_map,
+    plot_prediction_uncertainty,
+    plot_shap_map,
+    plot_shap_panels,
+    save_all_shap_maps,
+)
+from .plots import (
+    plot_confusion_matrices,
+    plot_fold_map,
+    plot_force,
+    plot_importance,
+    plot_importance_comparison,
+    plot_metric_comparison,
+    plot_partial_dependence,
+    plot_roc_pr_curves,
+    plot_shap_bar,
+    plot_shap_dependence,
+    plot_shap_summary,
+    plot_validation_comparison,
+    plot_waterfall,
+)
+from .style import apply_style, model_color, save_figure
+
+__all__ = [
+    "SOURCE_SYNTHETIC",
+    "add_north_arrow",
+    "add_scale_bar",
+    "apply_style",
+    "draw_architecture",
+    "draw_logo",
+    "draw_workflow",
+    "model_color",
+    "plot_confusion_matrices",
+    "plot_dominant_driver",
+    "plot_feature_and_shap",
+    "plot_fold_map",
+    "plot_force",
+    "plot_importance",
+    "plot_importance_comparison",
+    "plot_map",
+    "plot_metric_comparison",
+    "plot_partial_dependence",
+    "plot_prediction_uncertainty",
+    "plot_roc_pr_curves",
+    "plot_shap_bar",
+    "plot_shap_dependence",
+    "plot_shap_map",
+    "plot_shap_panels",
+    "plot_shap_summary",
+    "plot_validation_comparison",
+    "plot_waterfall",
+    "save_all_shap_maps",
+    "save_figure",
+]

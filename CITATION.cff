@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "GeoExplain: Explainable Machine Learning for Geospatial Prediction"
+abstract: >-
+  GeoExplain is an open-source Python toolkit for explaining machine-learning predictions on
+  geospatial data. Beyond global and local SHAP explanations it computes spatial SHAP layers that
+  show where each variable contributes to a prediction, and it provides spatial validation,
+  model comparison, reproducible workflows and an optional QGIS Processing provider.
+authors:
+  - family-names: Ali
+    given-names: Md Khadem
+    orcid: "https://orcid.org/0009-0006-0917-3372"
+version: 0.1.0
+date-released: "2026-09-20"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/mdkhademali/GeoExplain"
+url: "https://github.com/mdkhademali/GeoExplain"
+keywords:
+  - GeoAI
+  - explainable AI
+  - SHAP
+  - spatial validation
+  - GIS
+  - remote sensing

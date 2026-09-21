@@ -1,0 +1,7 @@
+* text=auto
+*.tif binary
+*.png binary
+*.pdf binary
+*.xlsx binary
+*.joblib binary
+*.ipynb linguist-documentation

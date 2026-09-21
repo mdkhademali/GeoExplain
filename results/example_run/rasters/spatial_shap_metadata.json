@@ -1,0 +1,94 @@
+{
+  "geoxplain_version": "0.1.0",
+  "model": {
+    "algorithm": "random_forest",
+    "label": "Random Forest",
+    "family": "tree",
+    "task": "classification",
+    "random_state": 42,
+    "params": {
+      "n_estimators": 200,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "max_depth": null
+    },
+    "feature_names": [
+      "ndvi",
+      "ndbi",
+      "lst",
+      "elevation",
+      "rainfall",
+      "distance_to_water",
+      "population"
+    ],
+    "classes": [
+      "0",
+      "1"
+    ]
+  },
+  "grid": {
+    "bands": [
+      "ndvi",
+      "ndbi",
+      "lst",
+      "elevation",
+      "rainfall",
+      "distance_to_water",
+      "population"
+    ],
+    "height": 100,
+    "width": 100,
+    "crs": "EPSG:32645",
+    "transform": [
+      30.0,
+      0.0,
+      500000.0,
+      0.0,
+      -30.0,
+      2600000.0
+    ],
+    "bounds": [
+      500000.0,
+      2597000.0,
+      503000.0,
+      2600000.0
+    ],
+    "pixel_size": [
+      30.0,
+      30.0
+    ],
+    "n_valid_cells": 10000,
+    "nodata_output": -9999.0
+  },
+  "base_value": 0.294492,
+  "output_space": "probability",
+  "explained_class": "1",
+  "shap_method": "tree",
+  "feature_order": [
+    "ndvi",
+    "ndbi",
+    "lst",
+    "elevation",
+    "rainfall",
+    "distance_to_water",
+    "population"
+  ],
+  "dominant_driver_legend": {
+    "0": "ndvi",
+    "1": "ndbi",
+    "2": "lst",
+    "3": "elevation",
+    "4": "rainfall",
+    "5": "distance_to_water",
+    "6": "population"
+  },
+  "uncertainty_method": "entropy",
+  "uncertainty_description": "Normalised Shannon entropy of the predicted class probabilities (0 = certain, 1 = uniform).",
+  "additivity_check": {
+    "max_abs_error": 4.884981308350689e-15,
+    "mean_abs_error": 7.815696874413635e-16,
+    "ok": true
+  },
+  "notes": [],
+  "interpretation": "SHAP values describe how the fitted model uses each feature. They quantify association captured by the model, not causal effects."
+}
