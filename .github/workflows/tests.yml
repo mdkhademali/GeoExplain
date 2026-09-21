@@ -19,10 +19,15 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: pip
           cache-dependency-paths: pyproject.toml
-      - name: Install
+           - name: Install
         run: |
           python -m pip install --upgrade pip
           pip install -e ".[dev]"
+
+      - name: Show SHAP and XGBoost versions
+        run: |
+          python -c "import shap, xgboost; print('SHAP:', shap.__version__); print('XGBoost:', xgboost.__version__)"
+
       - name: Run tests
         env:
           MPLBACKEND: Agg
