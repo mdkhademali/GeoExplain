@@ -114,7 +114,7 @@ class ShapValues:
 
 
 def _to_float(base: Any) -> float:
-    return float(np.ravel(np.asarray(base.replace('[', '').replace(']', ''), dtype=float))[0])
+   return float(np.ravel(np.asarray(base.replace('[', '').replace(']', '') if isinstance(base, str) else base, dtype=float))[0])
 
 
 class GeoShapExplainer:
